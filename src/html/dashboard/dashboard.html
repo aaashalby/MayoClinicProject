@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dashboard</title>
+    <link rel="stylesheet" href="../../css/globals.css">
+    <link rel="stylesheet" href="../../css/dashboard/dashboard.css">
 </head>
 <body>
-    
+    <header id="main-header">
+        <!--TODO: adjust navbar elements for smaller screens-->
+        <span id="logo-title-display">
+            <img src="../../../resources/images/mayo_logo_transparent.jpg">
+            <h2>Bariatric Patient Portal</h2>
+        </span>
+        <ul id="navbar">
+            <li class="nav-element"><a class="selection" href="">Account</a></li>
+            <li class="nav-element"><a class="selection" href="">Reminders</a></li>
+            <li class="nav-element"><a class="selection" href="#section-log">Logging</a></li>
+            <li class="nav-element"><a class="selection" href="">Reports</a></li>
+            <li class="nav-element"><a class="selection" href="">Guides</a></li>
+        </ul>
+    </header>
+    <main id="content">
+        <!--TODO: get name of logged in user-->
+        <section class="section-container">
+            <h1>Welcome, [name]</h1>
+        </section>
+        <section class="section-container">
+            <h2 class="section-header">Recent Activity</h2>
+            <table id="activity-table">
+                <tr class="table-entry">
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+                <!--TODO: track logged activity and insert here-->
+                <tr class="table-entry">
+                    <td>12:00</td>
+                    <td>Logged Meal</td>
+                </tr>
+                <tr class="table-entry">
+                    <td>12:05</td>
+                    <td>Set Reminder</td>
+                </tr>
+                <tr class="table-entry">
+                    <td>12:10</td>
+                    <td>Logged Workout</td>
+                </tr>
+            </table>
+        </section>
+        <section class="section-container" id="section-reminder">
+            <h2 class="section-header">Reminders</h2>
+            <h3>Upcoming reminders</h3>
+            <div id="reminder-view">
+                <table id="reminder-table">
+                        <tr class="table-entry">
+                            <th>Task</th>
+                            <th>Due By</th>
+                        </tr class="table-entry">
+                        <!--TODO: load in the reminder data-->
+                        <tr class="table-entry">
+                            <td>Take Meds</td>
+                            <td>3/5/25 9:00 AM</td>
+                        </tr>
+                </table>
+                <div class="selection-button">
+                    <a class="selection">Set a Reminder</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-container" id="section-log">
+            <h2 class="section-header">Log Health</h2>
+            <ul id="log-options">
+                <li class="selection-button"><a class="selection" href="">Log a Meal</a></li>
+                <li class="selection-button"><a class="selection" href="">Log a Workout</a></li>
+                <li class="selection-button"><a class="selection" href="">Log Mental Health</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer">
+        Developed by: Jack Schwendeman, [names here]
+    </footer>
 </body>
 </html>
