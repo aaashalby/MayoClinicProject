@@ -2,16 +2,15 @@ CREATE TABLE Account (
 	id			int PRIMARY KEY AUTO_INCREMENT,
 	email		varchar(50) UNIQUE NOT NULL,
     password	varchar(50) NOT NULL,
-    name		varchar(50) NOT NULL
+    name		varchar(50) NOT NULL -- first name
 );
 
 -- option user details to configure --
 CREATE TABLE UserDetails (
 	userId		int PRIMARY KEY,
 	dob			date,
-    firstName	varchar(50),
     lastName	varchar(50),
-    height		float,
+    height		float, -- probably have to convert feet and inches fields
     
     -- could be compared against reports --
     startWeight		float,

@@ -13,9 +13,12 @@
     </header>
     <main id="contents">
         <img id="mayo-logo" src="../../resources/images/mayo_logo_transparent.jpg" alt="Mayo Clinic Logo">
-        <h2>Log in or Sign up</h2>
-        <button class="primary-button">Log In</button>
-        <button class="primary-button">Sign Up</button>
+        <h2 id="status">Log in or Sign up</h2>
+        <p id="message" hidden="true"></p>
+        <button class="primary-button" onclick="displayForm(this.innerHTML)">Log In</button>
+        <button class="primary-button" onclick="displayForm(this.innerHTML)">Sign Up</button>
     </main>
+
+    <script src="../javascript/index.js"></script>
 </body>
 </html>
