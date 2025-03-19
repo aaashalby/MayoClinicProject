@@ -1,9 +1,6 @@
 body {
     display: flex;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
     flex-direction: column;
     background-size: cover;
     background-image: url("../../resources/images/mayo_building.webp")

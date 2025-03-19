@@ -4,9 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Information</title>
+    <link rel="stylesheet" href="../../css/globals.css">
+    <link rel="stylesheet" href="../../css/account/account.css">
     <!--Displays account information, edit username/password/medical data-->
 </head>
 <body>
-    
+    <header id="main-header">
+        <!--TODO: adjust navbar elements for smaller screens-->
+        <span id="logo-title-display">
+            <img src="../../../resources/images/mayo_logo_transparent.jpg" alt="Mayo Clinic Logo">
+            <h2>Bariatric Patient Portal</h2>
+        </span>
+        <ul id="navbar">
+            <li class="nav-element"><a class="selection" href="../dashboard/dashboard.html">Dashboard</a></li>
+            <li class="nav-element"><a class="selection" href="">Reminders</a></li>
+            <li class="nav-element"><a class="selection" href="#section-log">Logging</a></li>
+            <li class="nav-element"><a class="selection" href="">Reports</a></li>
+            <li class="nav-element"><a class="selection" href="#section-guide">Guides</a></li>
+        </ul>
+    </header>
+    <main id="content">
+
+        <section id="account-details-container">
+            <h1>Account Details</h1>
+            <div>
+                <table>
+                    <tr>
+                        <th>Email:</th>
+                        <!--TODO: placeholder-->
+                        <td>PlaceHolder@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="account-settings-container">
+            <h1>Account Settings</h1>
+            <table id="account-settings-table">
+                <tr class="account-setting">
+                    <th>First Name</th>
+                    <td contenteditable="true">Text</td>
+                </tr>
+                <tr class="account-setting">
+                    <th>Last Name</th>
+                    <td contenteditable="true">Text</td>
+                </tr>
+                <tr class="account-setting">
+                    <th>Date of Birth</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr class="account-setting">
+                    <th>Height (Feet)</th>
+                    <td><input type=number></td>
+                </tr>
+                <tr class="account-setting">
+                    <th>Height (Inches)</th>
+                    <td><input type=number></td>
+                </tr>
+                <tr class="account-setting">
+                    <th>Weight (Pounds)</th>
+                    <td><input type=number></td>
+                </tr>
+                <tr class="account-setting">
+                    <th>Allergies (Description)</th>
+                    <td contenteditable="true">Text</td>
+                </tr>
+                <tr class="account-setting">
+                    <th>Conditions (Description)</th>
+                    <td contenteditable="true">Text</td>
+                </tr>
+                <tr class="account-setting">
+                    <th>Medical History (Description)</th>
+                    <td contenteditable="true">Text</td>
+                </tr>
+            </table>
+            <div class="button selection">Save Changes</div>
+            <div class="button selection">Discard Changes</div>
+        </section>
+
+        <section id="account-administration-container">
+            <h1>Administration</h1>
+            <div class="button selection">Log Out</div>
+            <div class="button selection">Reset Password</div>
+            <div class="button selection">Delete Account</div>
+        </section>
+    </main>
 </body>
 </html>

@@ -6,15 +6,26 @@
     --mayo-dark-blue: #012d61;
     --mayo-med-blue: #005dac;
     --mayo-light-blue: #2273bb;
+    --mayo-white-blue: #e1f0ff;
     --site-white: aliceblue;
+    --font-one: Arial, Helvetica, sans-serif;
+
 }
 
-h1, h2, h3, h4, h5, h6, a {
-    font-family: Arial, Helvetica, sans-serif;
+h1, h2, h3, h4, h5, h6, a, th, td {
+    font-family: var(--font-one);
+    user-select: none; /* so that the text cant be highlighted */
 }
 
 /* TODO: pick out a second font for the project 
 (required) to apply to other elements like p, etc */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 
 /* fixed site header */
 #main-header {
@@ -23,6 +34,52 @@ h1, h2, h3, h4, h5, h6, a {
     text-wrap: nowrap;
     position: fixed;
     top: 0%;
+    right: 0%;
+}
+
+#logo-title-display {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    background-color: var(--site-white);
+}
+
+#logo-title-display > h2 {
+    padding-left: 15px;
+}
+
+#logo-title-display > img {
+    max-width: 90px;
+}
+
+#navbar {
+    width: 100%;
+    height: 30%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-element {
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav-element > a {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    color:var(--site-white);
+    background-color: var(--mayo-med-blue);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.selection:hover {
+    background-color: var(--mayo-light-blue);
 }
 
 /* fixed site footer */
@@ -31,8 +88,8 @@ h1, h2, h3, h4, h5, h6, a {
     align-items: center;
     height: 5%;
     width: 100%;
-    background-color: #005dac;
-    color: aliceblue;
+    background-color: var(--mayo-med-blue);
+    color: var(--site-white);
     position: fixed;
     top: 95%;
 }
